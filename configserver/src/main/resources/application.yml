@@ -1,0 +1,49 @@
+spring:
+  application:
+    name: "configserver"
+  profiles:
+    active: git
+    #active: native
+  cloud:
+    config:
+      server:
+        #native:
+          #search-locations: "file:///D://microservices//eazybyte//document//config"
+          #search-locations: "classpath:/config"
+        git:
+          uri: "https://github.com/henken12/banking-app-config.git"
+          default-label: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readiness-state:
+      enable: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
+encrypt:
+  key: "cdd571da5e2496279dc7e39618cf8c7ead52"
+
+
+
+server:
+  port: 8071
+logging:
+  pattern:
+    level: "%5p[${spring.application.name},%X{trace_id},%X{span_id}]"

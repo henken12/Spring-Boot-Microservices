@@ -1,0 +1,14 @@
+build:
+  version: "3.0"
+
+
+accounts:
+  message: "Welcome to EazyBank accounts related local APIs"
+  contact-details:
+    name:  "Henok Gebremichael-Developer"
+    email: "gebremichaelhenken@gmail.com"
+  onCallSupport:
+    -(571)455-3382
+    -(571)423-4454
+
+

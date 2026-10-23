@@ -1,0 +1,12 @@
+build:
+  version: "1.0"
+
+
+cards:
+  message: "Welcome to EazyBank cards related local APIs"
+  contact-details:
+    name: "Henok Gebremichael-Developer"
+    email: "gebremichaelhenken@gmail.com"
+  onCallSupport:
+    -(571)455-3382
+    -(571)423-4454

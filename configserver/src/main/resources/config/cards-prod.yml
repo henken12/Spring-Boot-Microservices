@@ -1,0 +1,12 @@
+build:
+  version: "1.0"
+
+
+cards:
+  message: "welcome to EazyBank loans related prod APIs"
+  contactDetails:
+    name: "Tsinat Tesfa-Product Owner"
+    email: "tsinattes@gmail.com"
+  onCallSupport:
+    -(456)456-4857
+    -(234)555-0478
